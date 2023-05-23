@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" content="">
+        <meta name ="viewport" content="width=device-width, initial scale=1.0">
+        <title>Add Contacts</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="hero">
+            <a href="class.html" target="_blank" class="first-link">
+                <img style="width: 10px; margin-right: 8%;" src="rounded.svg">
+                <p class="first-link">Contacts</p>
+            </a>
+            <div class="header">
+                <h3>Add Contact</h3>
+            </div>
+            <section>
+                <div class="first-section">
+                    <div class="first-section-item">
+                        <div style="background-color: #fff4d8;" class="first-item">
+                            <img src="MARIA-CONTACT.png">
+                        </div>
+                    </div>
+                    <div class="first-section-item">
+                        <p>Contact Name:</p>
+                        <input type="text" id="name" name="fname" required>
+                        <p id="demo1"></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="second-section">
+                    <div class="second-section-item">
+                        <p>Phone</p>
+                        <input id="number" name="" type="number" required>
+                        <p id="input"></p>
+                    </div>
+                    <div class="second-section-item">
+                        <p>Work</p>
+                        <input type="number" name="" required>
+                    </div>
+                    <div class="second-section-item" id="second-section-item">
+                        <p>Address</p>
+                        <input type="text" required>
+                    </div>
+                </div>
+            </section>
+            <a href="saved.html"><button id="link" onclick="return saveContact()">Save</button></a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
