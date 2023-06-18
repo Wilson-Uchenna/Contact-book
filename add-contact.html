@@ -4,12 +4,12 @@
         <meta charset="UTF-8" content="">
         <meta name ="viewport" content="width=device-width, initial scale=1.0">
         <title>Add Contacts</title>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="hero">
             <a href="class.html" target="_blank" class="first-link">
-                <img style="width: 10px; margin-right: 8%;" src="rounded.svg">
+                <img style="width: 10px; margin-right: 8%;" src="img/rounded.svg">
                 <p class="first-link">Contacts</p>
             </a>
             <div class="header">
@@ -19,26 +19,26 @@
                 <div class="first-section">
                     <div class="first-section-item">
                         <div style="background-color: #fff4d8;" class="first-item">
-                            <img src="MARIA-CONTACT.png">
+                            <img src="img/MARIA-CONTACT.png">
                         </div>
                     </div>
                     <div class="first-section-item">
                         <p>Contact Name:</p>
                         <input type="text" id="inputfield" oninput="validContact()" name="fname" required>
-                        <p id="demo1"></p>
                     </div>
                 </div>
             </section>
+            <p id="demo1"></p>
             <section>
                 <div class="second-section">
                     <div class="second-section-item">
                         <p>Phone</p>
-                        <input id="number" name="" type="number" required>
+                        <input id="number" oninput="validPhone()" name="" type="number" required>
                         <p id="input"></p>
                     </div>
                     <div class="second-section-item">
                         <p>Work</p>
-                        <input type="number" name="" required>
+                        <input id= "number" oninput = "validPhone()"type="number" name="" required>
                     </div>
                     <div class="second-section-item" id="second-section-item">
                         <p>Address</p>
