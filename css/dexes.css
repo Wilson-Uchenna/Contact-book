@@ -1,4 +1,5 @@
-* {
+@media screen {
+    * {
     padding: 0;
     margin: 2% 1%;
     font-weight: bold;
@@ -51,4 +52,5 @@ a {
 .button img {
     margin-right: 10px;
     vertical-align: middle;
+}
 }

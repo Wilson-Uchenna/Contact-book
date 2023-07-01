@@ -1,4 +1,5 @@
-.hero {
+@media screen {
+    .hero {
     margin: 5%;
     padding: 0;
     font-weight: bold;
@@ -77,4 +78,5 @@ img {
     align-items: center;
     gap: 20px;
     width: 20%;
+}
 }
