@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="hero">
-            <a href="class.html" target="_blank" class="first-link">
+            <a href="class.html" class="first-link">
                 <img style="width: 10px; margin-right: 8%;" src="img/rounded.svg">
                 <p class="first-link">Contacts</p>
             </a>
@@ -23,8 +23,10 @@
                         </div>
                     </div>
                     <div class="first-section-item">
-                        <p>Contact Name:</p>
+                        <form id="form">
+                        <label>Contact Name:</label>
                         <input type="text" id="inputfield" oninput="validContact()" name="fname" required>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -32,21 +34,29 @@
             <section>
                 <div class="second-section">
                     <div class="second-section-item">
-                        <p>Phone</p>
+                        <form id="form">
+                        <label for="number">Phone:</label>
                         <input id="number" oninput="validPhone()" name="" type="number" required>
+                        </form>
                         <p id="input"></p>
                     </div>
                     <div class="second-section-item">
-                        <p>Work</p>
-                        <input id= "number" oninput = "validPhone()"type="number" name="" required>
+                        <form id="form">
+                            <label for="number2">Work:</label>
+                        <input id= "number2" oninput = "validWork()"type="number" name="" required>
+                        </form>
+                        <p id="input"></p>
                     </div>
                     <div class="second-section-item" id="second-section-item">
-                        <p>Address</p>
-                        <input type="text" required>
+                        <form id="form">
+                            <label for="Address">Address:</label>
+                        <input id="Address" oninput="validAddress()" type="text" name="" required>
+                        </form>
+                        <p id="last-address"></p>
                     </div>
                 </div>
             </section>
-            <a href="saved.html"><button id="link">Save</button></a>
+            <a id="link" href="saved.html"><button>Save</button></a>
         </div>
         <script src="script.js"></script>
     </body>

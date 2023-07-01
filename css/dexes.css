@@ -28,7 +28,15 @@ a {
     padding: 5px 5% 10px 5%;
     gap: 0px;
 }
-    
+  #demoi {
+    display: flex;
+    justify-content: center;
+  }  
+  .number {
+    color: blueviolet;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
  .button {
     text-decoration: none;
     border: none;
