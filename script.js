@@ -92,7 +92,11 @@ function validWork() {
       localStorage.setItem('phone', phoneValueReturn);
       localStorage.setItem('work', phoneValue2Return);
       localStorage.setItem('address', addressValueReturn);
+      const existingNames = JSON.parse(localStorage.getItem('names')) || [];
+      existingNames.push(inputValueReturn);
+      localStorage.setItem('names', JSON.stringify(existingNames));
       window.location.href = "saved.html";
+      return existingNames
     }
   }
   link.addEventListener('click', emptyblank);
