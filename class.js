@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <img src="img/whiteemail.svg">
                                 </div>
                             </div>`;
-    targetElement.insertAdjacentElement('afterEnd', newElement);
+    targetElement.insertAdjacentElement('beforeBegin', newElement);
                 });
 
 
