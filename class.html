@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html>
-   <head>
-        <meta charset="UTF-8" content="">
-        <meta name ="viewport" content="width=device-width, initial scale=1.0">
-        <title>Contact-book</title>
-        <link href="css/index.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <div class="hero">
-            <header class="header">
-                <h2>Contacts</h2>
-                <a href="add-contact.html" class="abutton-link" onclick="addContact()">
-                    <p style="margin: 0;"><img src="img/add.svg">Add</p>
-                </a>
-            </header>
-            <div class="search">
-                <div class="serch-link">
-                <img src="img/search.svg"><input id="searchContact" oninput="searchContact()" style="color: #6166ce;"type="text" placeholder="Search for Contact">
+
+<head>
+    <meta charset="UTF-8" content="">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Contact-book</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="hero">
+        <header class="header">
+            <h2>Contacts</h2>
+            <a href="add-contact.html" class="abutton-link" onclick="addContact()">
+                <p style="margin: 0;"><img src="img/add.svg">Add</p>
+            </a>
+        </header>
+        <div class="search">
+            <div class="serch-link">
+                <img src="img/search.svg"><input id="searchContact" style="color: #6166ce;" type="text"
+                    placeholder="Search for Contact">
+            </div>
+        </div>
+        <section>
+            <h2 style="font-size: 16px;">⭐️ Favorites</h2>
+            <div id="first-section" class="first-section">
+                <div class="first-section-container">
+                    <div style="background-color: #fff4d8;" class="first-item">
+                        <img src="img/first-favor.png">
+                    </div>
+                    <p>Maria</p>
+                </div>
+                <div class="first-section-container">
+                    <div style="background-color: #ffe6d8;" class="first-item">
+                        <img src="img/second-favor.png">
+                    </div>
+                    <p>Hubby</p>
+                </div>
+                <div class="first-section-container">
+                    <div style="background-color: #d8ffee" class="first-item">
+                        <img src="img/third-favor.png">
+                    </div>
+                    <p>Grandma</p>
+                </div>
+                <div class="first-section-container">
+                    <div style="background-color: #E0E1FF;" class="first-item">
+                        <img src="img/forth-favor.png">
+                    </div>
+                    <p>Grandpa</p>
                 </div>
             </div>
-            <section>
-                <h2 style="font-size: 16px;">⭐️ Favorites</h2>
-                <div class="first-section">
-                    <div class="first-section-container">
-                        <div style="background-color: #fff4d8;" class="first-item">
-                            <img src="img/first-favor.png">
+        </section>
+        <section>
+            <h2 id="heading" style="font-size: 16px;">☎️ All contacts</h2>
+            <div class="second-section">
+                <div class="second-section-container" id="targetElement">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #fff4d8;" class="second-image-background">
+                                <img src="img/first-image.png">
+                            </div>
+                            <p>Auntie Sara</p>
                         </div>
-                        <p>Maria</p>
-                    </div>
-                    <div class="first-section-container">
-                        <div style="background-color: #ffe6d8;" class="first-item">
-                            <img src="img/second-favor.png">
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
                         </div>
-                        <p>Hubby</p>
-                    </div>
-                    <div class="first-section-container">
-                        <div style="background-color: #d8ffee" class="first-item">
-                            <img src="img/third-favor.png">
-                        </div>
-                        <p>Grandma</p>
-                    </div>
-                    <div class="first-section-container">
-                        <div style="background-color: #E0E1FF;" class="first-item">
-                            <img src="img/forth-favor.png">
-                        </div>
-                        <p>Grandpa</p>
                     </div>
                 </div>
-            </section>
-            <section>
-                <h2 style="font-size: 16px;">☎️ All contacts</h2>
-                <div class="second-section">
-                    <div class="second-section-container" id="targetElement">
-                            <div class="second-section-item">
-                                <div class="section-section-item">
-                                    <div style="background-color: #fff4d8;" class="second-image-background">
-                                    <img src="img/first-image.png">
-                                    </div>
-                                    <p>Auntie Sara</p>
-                                </div>
-                                <div class="second-section-section-item">
-                                    <img src="img/whitestar.svg">
-                                    <img src="img/whitecall.svg">
-                                    <img src="img/whiteemail.svg">
-                                </div>
-                            </div>
-                    </div>
-                    <div class="second-section-container">
-                        <div class="second-section-item">
-                            <div class="section-section-item">
-                                <div style="background-color: #e9ffd8;" class="second-image-background">
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #e9ffd8;" class="second-image-background">
                                 <img src="img/second-image.png">
-                                </div>
-                                <p>Gavin Torres</p>
                             </div>
-                            <div class="second-section-section-item">
-                                <img src="img/whitestar.svg">
-                                <img src="img/whitecall.svg">
-                                <img src="img/whiteemail.svg">
-                            </div>
+                            <p>Gavin Torres</p>
                         </div>
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
+                    </div>
                 </div>
                 <div class="second-section-container">
                     <div class="second-section-item">
                         <div class="section-section-item">
                             <div style="background-color: #d8ffe5" class="second-image-background">
-                            <img src="img/third-image.png">
+                                <img src="img/third-image.png">
                             </div>
                             <p>Lily Roberts</p>
                         </div>
@@ -95,116 +98,117 @@
                             <img src="img/whiteemail.svg">
                         </div>
                     </div>
-            </div>
-            <div class="second-section-container">
-                <div class="second-section-item">
-                    <div class="section-section-item">
-                        <div style="background-color: #d8fffd;" class="second-image-background">
-                        <img src="img/fourth-image.png">
+                </div>
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #d8fffd;" class="second-image-background">
+                                <img src="img/fourth-image.png">
+                            </div>
+                            <p>Mason White</p>
                         </div>
-                        <p>Mason White</p>
-                    </div>
-                    <div class="second-section-section-item">
-                        <img src="img/whitestar.svg">
-                        <img src="img/whitecall.svg">
-                        <img src="img/whiteemail.svg">
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
                     </div>
                 </div>
-        </div>
-        <div class="second-section-container">
-            <div class="second-section-item">
-                <div class="section-section-item">
-                    <div style="background-color: #d8eaff;" class="second-image-background">
-                        <img src="img/fifth-image.png">
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #d8eaff;" class="second-image-background">
+                                <img src="img/fifth-image.png">
+                            </div>
+                            <p>Sophia Lopez</p>
+                        </div>
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
                     </div>
-                    <p>Sophia Lopez</p>
                 </div>
-                <div class="second-section-section-item">
-                    <img src="img/whitestar.svg">
-                    <img src="img/whitecall.svg">
-                    <img src="img/whiteemail.svg">
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #fff4d8;" class="second-image-background">
+                                <img src="img/first-image.png">
+                            </div>
+                            <p>Auntie Sara</p>
+                        </div>
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #e9ffd8;" class="second-image-background">
+                                <img src="img/second-image.png">
+                            </div>
+                            <p>Gavin Torres</p>
+                        </div>
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #d8ffe5" class="second-image-background">
+                                <img src="img/third-image.png">
+                            </div>
+                            <p>Lily Roberts</p>
+                        </div>
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #d8fffd;" class="second-image-background">
+                                <img src="img/fourth-image.png">
+                            </div>
+                            <p>Mason White</p>
+                        </div>
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-section-container">
+                    <div class="second-section-item">
+                        <div class="section-section-item">
+                            <div style="background-color: #d8eaff;" class="second-image-background">
+                                <img src="img/fifth-image.png">
+                            </div>
+                            <p>Auntie Sara</p>
+                        </div>
+                        <div class="second-section-section-item">
+                            <img src="img/whitestar.svg">
+                            <img src="img/whitecall.svg">
+                            <img src="img/whiteemail.svg">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="second-section-container">
-            <div class="second-section-item">
-                <div class="section-section-item">
-                    <div style="background-color: #fff4d8;" class="second-image-background">
-                    <img src="img/first-image.png">
-                    </div>
-                    <p>Auntie Sara</p>
-                </div>
-                <div class="second-section-section-item">
-                    <img src="img/whitestar.svg">
-                    <img src="img/whitecall.svg">
-                    <img src="img/whiteemail.svg">
-                </div>
-            </div>
-        </div>
-        <div class="second-section-container">
-            <div class="second-section-item">
-                <div class="section-section-item">
-                    <div style="background-color: #e9ffd8;" class="second-image-background">
-                    <img src="img/second-image.png">
-                    </div>
-                    <p>Gavin Torres</p>
-                </div>
-                <div class="second-section-section-item">
-                    <img src="img/whitestar.svg">
-                    <img src="img/whitecall.svg">
-                    <img src="img/whiteemail.svg">
-                </div>
-            </div>
-        </div>
-        <div class="second-section-container">
-            <div class="second-section-item">
-                <div class="section-section-item">
-                    <div style="background-color: #d8ffe5" class="second-image-background">
-                    <img src="img/third-image.png">
-                    </div>
-                    <p>Lily Roberts</p>
-                </div>
-                <div class="second-section-section-item">
-                    <img src="img/whitestar.svg">
-                    <img src="img/whitecall.svg">
-                    <img src="img/whiteemail.svg">
-                </div>
-            </div>
-        </div>
-        <div class="second-section-container">
-            <div class="second-section-item">
-                <div class="section-section-item">
-                    <div style="background-color: #d8fffd;" class="second-image-background">
-                    <img src="img/fourth-image.png">
-                    </div>
-                    <p>Mason White</p>
-                </div>
-                <div class="second-section-section-item">
-                    <img src="img/whitestar.svg">
-                    <img src="img/whitecall.svg">
-                    <img src="img/whiteemail.svg">
-                </div>
-            </div>
-        </div>
-        <div class="second-section-container">
-            <div class="second-section-item">
-                <div class="section-section-item">
-                    <div style="background-color: #d8eaff;" class="second-image-background">
-                        <img src="img/fifth-image.png">
-                    </div>
-                    <p>Auntie Sara</p>
-                </div>
-                <div class="second-section-section-item">
-                    <img src="img/whitestar.svg">
-                    <img src="img/whitecall.svg">
-                    <img src="img/whiteemail.svg">
-                </div>
-            </div>
-        </div>
-                </div>
-            </section>
-        </div>
-        <script src="class.js">
-        </script>
-    </body>
+        </section>
+    </div>
+    <script src="class.js">
+    </script>
+</body>
+
 </html>
